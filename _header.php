@@ -29,6 +29,7 @@ if (isset($_SESSION['user']) == null) {
   <link rel="stylesheet" href="<?=base_url('dist/css/skins/_all-skins.min.css')?>">
   <link rel="stylesheet" href="<?=base_url('bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css')?>">
 
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -76,7 +77,7 @@ if (isset($_SESSION['user']) == null) {
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="<?=base_url('dist/img/user2-160x160.jpg')?>" class="user-image" alt="User Image">
-              <span class="hidden-xs"><?=$_SESSION['user'];?></span>
+              <span class="hidden-xs"><?=$_SESSION['nama_user'];?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -84,7 +85,7 @@ if (isset($_SESSION['user']) == null) {
                 <img src="<?=base_url('dist/img/user2-160x160.jpg')?>" class="img-circle" alt="User Image">
 
                 <p>
-                  <?=$_SESSION['user'];?> - Web Developer
+                  <?=$_SESSION['nama_user'];?> - Web Developer
                   <small>Member since Nov. 2012</small>
                 </p>
               </li>
@@ -114,7 +115,7 @@ if (isset($_SESSION['user']) == null) {
           <img src="<?=base_url('dist/img/user2-160x160.jpg')?>" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p><?=$_SESSION['user'];?></p>
+          <p><?=$_SESSION['nama_user'];?></p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -138,7 +139,7 @@ if (isset($_SESSION['user']) == null) {
 	        	<a href="<?=base_url('obat');?>"><i class="fa fa-medkit"></i> <span>Data Obat</span></a>
 	        </li>
         <li>
-        	<a href="<?=base_url('dashboard');?>"><i class="fa fa-heartbeat"></i> <span>Rekam Medis</span></a>
+        	<a href="<?=base_url('rekam_medis');?>"><i class="fa fa-heartbeat"></i> <span>Rekam Medis</span></a>
         </li>
       </ul>
     </section>

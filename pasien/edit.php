@@ -1,8 +1,5 @@
 <?php
 include_once('../_header.php');
-// require '../_config/libs/vendor/autoload.php';
-// require '../_config/libs/vendor/moontoast/math/src/Moontoast/Math/BigNumber.php';
-
 ?>
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -84,7 +81,6 @@ include_once('../_header.php');
             telepon:$("#telepon").val(),
 			edit:true
 		}
-		console.log(data);
 			$.ajax({
 			 type: "post",
 			    url: "proses.php",

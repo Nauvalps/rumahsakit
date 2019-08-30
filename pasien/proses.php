@@ -35,7 +35,7 @@ use Ramsey\Uuid\Exception\UnsatisfiedDependencyException;
         if (mysqli_num_rows($cek_no_identitas) > 0) {
             "<script>alert('No identitas sudah dipakai !'); window.location='edit.php?id=$id';</script>";
         }else{
-    	$update = mysqli_query($koneksi, "UPDATE tb_pasien SET no_identitas = '$no_identitas', nama_pasien = '$nama_pasien', jns_kelamin = '$jk', alamat = '$alamat', no_telp = '$telepon' WHERE id_pasien = '$id')") or die(mysqli_error($insert));
+    	$update = mysqli_query($koneksi, "UPDATE tb_pasien SET no_identitas = '$no_identitas', nama_pasien = '$nama_pasien', jns_kelamin = '$jk', alamat = '$alamat', no_telp = '$telepon' WHERE id_pasien = '$id'") or die(mysqli_error($update));
         // echo "<script>window.location='data.php';</script>";
         }
     }

@@ -83,7 +83,7 @@ include_once('../_header.php');
 			    data: data,  //post data
 			    success: function(){
      				Swal.fire({
-			     	title:"Tambah data dokter berhasil!",
+			     	title:"Tambah data pasien berhasil!",
 			     	type:"success",
 					confirmButtonText: 'OK'
 			     }).then((result) =>{

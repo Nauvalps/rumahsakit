@@ -49,7 +49,9 @@ if (isset($_SESSION['user'])) {
                             $pass = sha1(trim(mysqli_real_escape_string($koneksi, $_POST['pass'])));
                             $sql_login = mysqli_query($koneksi, "SELECT * FROM tb_user WHERE username = '$user' AND password= '$pass' ") or die (mysqli_error($koneksi));
                             if (mysqli_num_rows($sql_login) > 0) {
+                                $row_akun = mysqli_fetch_array($sql_login);
                                 $_SESSION['user'] = $user;
+                                $_SESSION['nama_user'] = $row_akun["nama_user"];
                                 echo "<script>window.location='".base_url()."';</script>";
                             }else{?>
                                 <div class="login-box-body">

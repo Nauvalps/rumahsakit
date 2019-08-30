@@ -5,7 +5,7 @@
       <h1>
        Dashboard
       </h1>&nbsp;&nbsp;
-      <p>Selamat datang <mark><?=$_SESSION['user'];?></mark> di website Rumah Sakit (Rekam Medis)</p>
+      <p>Selamat datang <mark><?=$_SESSION['nama_user'];?></mark> di website Rumah Sakit (Rekam Medis)</p>
     </section>
 
     <!-- Macontent -->
